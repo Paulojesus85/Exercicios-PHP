@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!--Este é o primeiro exercício do Curso de PHP desenvolvido pelo professor Gustavo Guanabara. O intuito aqui é construir uma área na página html para receber um valor do usuário e retornar a raiz quadrada.-->
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" href="_css/estilo.css"/> <!--Para deixar o HTML mais bonito, mas sem perder muito tempo, já que o curso é de PHP, o professor já disponibilizou um arquivo em CSS pronto.-->
+  <meta charset="UTF-8"/>
+  <title>Curso de PHP - CursoemVideo.com</title>
+</head>
+<body>
+<div> <!--Dentro desta div nós vamos criar uma área de formulário para poder enviar para o arquivo PHP os dados recebeidos no HTML.-->
+    <form method = "post" action = "exe01.php"> <!--Dentro da tag form, nós temos o parâmetro method que pode ser "get" ou "post". Esta será a forma/método como os arquivos serão enviados para o arquivo php. O outro parâmetro é action. Dentro deste parâmetro teremos o nome do arquivo PHP para onde os dados serão enviados. -->
+        Valor: <input type = "number" name = "raiz"/> <!--Aqui temos um input number básico para o usuário infomar um valor number qualquer. NO parâmetro name nós vamos indicar o nome que será usado no arquivo php para chamar o número digitado.-->
+        <input type = "submit" value = "Raiz quadrada"><!--Aqui temos um input submit básico para enviar o dado para o arquivo PHP. Precisa ser input submit! Não funciona com input button.-->
+    </form>
+</div>
+</body>
+</html>
